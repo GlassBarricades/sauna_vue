@@ -28,7 +28,6 @@
       style="background: radial-gradient(circle, #35a2ff 0%, #014a88 100%)"
     >
       <img src="https://cdn.quasar.dev/img/mountains.jpg">
-
       <q-card-section>
         <div class="text-h6 text-center">{{ serviceSmallItem.title }}</div>
       </q-card-section>
