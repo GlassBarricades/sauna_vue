@@ -11,6 +11,9 @@ import Service from "./views/Service";
 import Testimonial from "./views/Testimonial";
 import Tab from "./components/TabService.vue";
 import Testim from "./components/TestimonialComponent.vue";
+import Cont from "./components/ContactComponent.vue";
+import Gal from "./components/GalleryComponent.vue";
+import TimeLine from "./components/TimeLine.vue";
 
 import router from './router';
 import store from './store';
@@ -26,6 +29,10 @@ Vue.component('service', Service);
 Vue.component('testimonial', Testimonial);
 Vue.component('service-tabs', Tab);
 Vue.component('testimonial-scroll', Testim);
+Vue.component('contact-me', Cont);
+Vue.component('gal', Gal);
+Vue.component('time-line', TimeLine);
+
 
 new Vue({
   router,

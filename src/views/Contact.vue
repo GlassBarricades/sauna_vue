@@ -1,5 +1,5 @@
 <template>
     <div>
-        Контакты
+        <contact-me/>
     </div>
 </template>

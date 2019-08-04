@@ -1,5 +1,5 @@
 <template>
     <div>
-        <h1>Бронирование</h1>
+        <time-line></time-line>
     </div>
 </template>

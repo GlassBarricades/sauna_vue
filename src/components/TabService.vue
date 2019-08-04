@@ -23,7 +23,7 @@
 
 </div>
   <div class="full-width q-pa-md row justify-around items-center q-gutter-md">
-    <q-card v-for="serviceSmallItem in serviceSmallItems" :key="serviceSmallItem[i]"
+    <q-card v-for="(serviceSmallItem, index4) in serviceSmallItems" :key="index4"
       class="my-card text-white column -center"
       style="background: radial-gradient(circle, #35a2ff 0%, #014a88 100%)"
     >
@@ -47,7 +47,7 @@
 
 </div>
   <div class="full-width q-pa-md row justify-around items-center q-gutter-md">
-    <q-card v-for="serviceBigItem in serviceBigItems" :key="serviceBigItem[i]"
+    <q-card v-for="(serviceBigItem, index) in serviceBigItems" :key="index"
       class="my-card text-white"
       style="background: radial-gradient(circle, #35a2ff 0%, #014a88 100%)"
     >

@@ -13,18 +13,21 @@
         />
 
         <q-toolbar-title>
-         Сауна "На Набережной"
+          <img height="50" src="./assets/Bezymyanny-2.svg" alt="">
+          <!-- <img height="50" src="./assets/Logo.svg" alt=""> -->
+          
+         <!-- Сауна "На Набережной" -->
         </q-toolbar-title>
 
         <div class="desktop-only">
-          <q-btn flat v-for="menuItem in menuItems" :to="menuItem.path" :key="menuItem[i]">{{ menuItem.title }}</q-btn>
+          <q-btn flat v-for="(menuItem, index1) in menuItems" :to="menuItem.path" :key="index1">{{ menuItem.title }}</q-btn>
         </div>
 
         <q-btn class="desktop-only" color="secondary">Заказать обратный звонок</q-btn>
         <a href="tel:+375297680118"><q-btn class="mobile-only" color="secondary">Позвонить</q-btn></a>
 
         <div class="desktop-only">
-          <q-btn flat v-for="socialItem in socialItems" :key="socialItem[i]" target="_blank"><q-icon :name='socialItem.icon' /></q-btn>
+          <q-btn flat v-for="(socialItem, index2) in socialItems" :key="index2" target="_blank"><q-icon :name='socialItem.icon' /></q-btn>
         </div>
 
       </q-toolbar>
@@ -39,7 +42,7 @@
       <q-list>
         <q-item-label header>Меню</q-item-label>
         <q-separator />
-        <q-item v-for="menuItem in menuItems" :to="menuItem.path" :key="menuItem[i]" exact>
+        <q-item v-for="(menuItem, index3) in menuItems" :to="menuItem.path" :key="index3" exact>
           <q-item-section>
             <q-item-label>{{menuItem.title}}</q-item-label>
           </q-item-section>
@@ -47,7 +50,7 @@
         <q-separator />
 
         <q-item-label header>Социальные сети</q-item-label>
-        <q-item :class="socialItem.color" v-for="socialItem in socialItems" :key="socialItem[i]" clickable tag="a" target="_blank" :href='socialItem.link'>
+        <q-item :class="socialItem.color" v-for="(socialItem, index) in socialItems" :key="index" clickable tag="a" target="_blank" :href='socialItem.link'>
           <q-item-section  avatar>
             <q-icon :name='socialItem.icon' />
           </q-item-section>

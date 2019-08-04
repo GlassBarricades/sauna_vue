@@ -1,5 +1,5 @@
 <template>
     <div>
-        Галерея
+        <gal/>
     </div>
 </template>
