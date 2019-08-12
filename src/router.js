@@ -2,7 +2,7 @@
 import Vue from 'vue';
 import Router from 'vue-router';
 import Home from "./views/Home";
-import Stock from "./views/Stock";
+import Blog from "./views/Blog";
 import Booking from "./views/Booking";
 import Contact from "./views/Contact";
 import Gallery from "./views/Gallery";
@@ -21,9 +21,9 @@ export default new Router({
       component: Home
     },
     {
-      path: '/stock',
-      name: 'Stock',
-      component: Stock
+      path: '/blog',
+      name: 'Blog',
+      component: Blog
     },
     {
       path: '/booking',

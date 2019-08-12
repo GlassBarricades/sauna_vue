@@ -3,7 +3,7 @@ import Vue from 'vue';
 
 import App from './App.vue';
 import Home from "./views/Home";
-import Stock from "./views/Stock";
+import Blog from "./views/Blog";
 import Booking from "./views/Booking";
 import Contact from "./views/Contact";
 import Gallery from "./views/Gallery";
@@ -21,7 +21,7 @@ import './quasar';
 
 Vue.config.productionTip = false;
 Vue.component('home', Home);
-Vue.component('stock', Stock);
+Vue.component('blog', Blog);
 Vue.component('booking', Booking);
 Vue.component('contact', Contact);
 Vue.component('gallery', Gallery);

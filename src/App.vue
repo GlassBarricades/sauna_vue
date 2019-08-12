@@ -11,19 +11,18 @@
           icon="fas fa-bars"
           class="mobile-only"
         />
-
-        <q-toolbar-title>
           <img height="50" src="./assets/Bezymyanny-2.svg" alt="">
+        <q-toolbar-title>
           <!-- <img height="50" src="./assets/Logo.svg" alt=""> -->
           
-         <!-- Сауна "На Набережной" -->
+         Сауна "На Набережной"
         </q-toolbar-title>
 
         <div class="desktop-only">
           <q-btn flat v-for="(menuItem, index1) in menuItems" :to="menuItem.path" :key="index1">{{ menuItem.title }}</q-btn>
         </div>
 
-        <q-btn class="desktop-only" color="secondary">Заказать обратный звонок</q-btn>
+        <!-- <q-btn class="desktop-only" color="secondary">Заказать обратный звонок</q-btn> -->
         <a href="tel:+375297680118"><q-btn class="mobile-only" color="secondary">Позвонить</q-btn></a>
 
         <div class="desktop-only">
@@ -78,7 +77,7 @@ export default {
       // leftDrawerOpen: this.$q.platform.is.desktop,
       menuItems: [
           { title: 'Главная', path: '/'},
-          { title: 'Акции', path: '/stock'},
+          { title: 'Новости', path: '/blog'},
           { title: 'Бронирование', path: '/booking'},
           { title: 'Услуги', path: '/service'},
           { title: 'Фотографии', path: '/gallery'},
